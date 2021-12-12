@@ -1,24 +1,13 @@
-# RANDOM IMPORTIEREN
 import random
 
-# VARIABLEN
-n = 0
+def bubbleSort (unsortedList):
+    for i in range (len(unsortedList)):
+        for j in range (0, len(unsortedList) - 1 - i):
+            if unsortedList[j] > unsortedList[j + 1]:
+                unsortedList[j], unsortedList[j + 1] = unsortedList[j + 1], unsortedList[j]
+    return x
+
 x = list(random.sample(range(100), 20))
+x = bubbleSort(x)
 
-# GIBT DIE LISTE AUS
 print(x)
-
-    # PROZESS GEHT NUR BIS 100
-while n < 101:
-
-    # GUCKT OB n IN x IST
-    if n in x:
-        print(n)
-        n = n + 1
-
-    else:
-        n = n + 1
-
-# SAGT DASS PROZESS BEENDET IST
-else: 
-    print("Fertig!")
